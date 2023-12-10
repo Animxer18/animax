@@ -1,0 +1,46 @@
+nav.nav-container {
+  width: 100%;
+  padding: 5px 12px;
+  height: 70px;
+}
+
+.nav-wrapper {
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+nav.nav-container + div {
+  padding: 0 12px;
+}
+
+.search-bar {
+  position: relative;
+}
+
+.search-bar input {
+  padding: 8px 10px;
+  background: transparent;
+  border: 1px solid #fff2;
+  border-radius: 5px;
+  color: var(--primary);
+  font-weight: 500;
+}
+.search-bar input:focus {
+  outline: 1px solid var(--primary);
+  scale: 1.05;
+}
+.search-bar input:focus + img {
+  scale: 1.05;
+}
+
+.search-bar img {
+  width: 20px;
+  height: auto;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}

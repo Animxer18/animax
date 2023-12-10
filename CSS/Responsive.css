@@ -1,0 +1,80 @@
+.main-container {
+  width: 70%;
+  position: relative;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+/* MEDIUM */
+@media screen and (max-width: 800px) {
+  .main-container {
+    width: 85%;
+  }
+
+  nav.nav-container a h1 {
+    font-size: 25px;
+  }
+
+  nav.nav-container a.link,
+  nav.nav-container + div .link {
+    font-size: 14px;
+  }
+
+  nav.nav-container .login-btn {
+    padding: 6px 8px;
+    font-size: 14px;
+  }
+
+  .intro-anime .intro-title {
+    font-size: 35px !important  ;
+  }
+
+  .animes-container {
+    grid-template-columns: 30% 30% 30% !important;
+  }
+}
+
+/* SMALL */
+@media screen and (max-width: 500px) {
+  .main-container {
+    width: 100%;
+  }
+
+  nav.nav-container a h1 {
+    font-size: 20px;
+  }
+
+  nav.nav-container a.link,
+  nav.nav-container + div .link {
+    font-size: 12px;
+  }
+
+  nav.nav-container .login-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .intro-anime {
+    text-align: center;
+    margin: 0 auto !important;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .intro-anime .intro-title {
+    font-size: 30px !important  ;
+  }
+
+  .animes-container {
+    grid-template-columns: 30% 30% 30% !important;
+    gap: 15px !important;
+  }
+
+  .animes-container .anime-wrapper {
+    height: 220px !important;
+  }
+
+  .animes-container .anime-wrapper p {
+    font-size: 12px !important;
+  }
+}

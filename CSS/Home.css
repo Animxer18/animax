@@ -1,0 +1,139 @@
+.spotlight-container {
+  width: 100%;
+  /* background-image: url("/sample2.jpg"); */
+  height: 100vh;
+  background-position: center !important;
+  background-size: cover !important;
+  position: relative;
+}
+
+.spotlight-container div {
+  position: absolute;
+}
+
+.spotlight-container .left-overlay {
+  width: 30%;
+  height: 100%;
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(18, 18, 18, 1),
+    transparent 50%,
+    transparent
+  );
+}
+
+.spotlight-container .right-overlay {
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(18, 18, 18, 1),
+    transparent 50%,
+    transparent
+  );
+}
+
+.spotlight-container .top-overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(18, 18, 18, 1),
+    transparent 80%,
+    transparent
+  );
+}
+
+.spotlight-container .bottom-overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(18, 18, 18, 1),
+    transparent 50%,
+    transparent
+  );
+  bottom: 0;
+}
+
+/* Intro Anime */
+
+.intro-anime {
+  position: absolute;
+  top: 35%;
+  margin: 0 50px;
+  max-width: 400px;
+  word-wrap: break-word;
+}
+
+.intro-anime .intro-title {
+  font-size: 40px;
+}
+
+.intro-anime * {
+  margin: 5px 0;
+}
+
+.intro-anime .intro-desc {
+  font-size: 15px;
+}
+
+/* Animes */
+.animes-container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  gap: 20px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.animes-container .anime-wrapper {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  filter: brightness(0.8);
+}
+
+.animes-container .anime-wrapper div {
+  position: relative;
+  height: 100%;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.animes-container .anime-wrapper div .overlay {
+  position: absolute;
+  height: 50%;
+  bottom: 0;
+  background: linear-gradient(to top, #000000dc, transparent);
+  z-index: 10;
+}
+
+.animes-container .anime-wrapper div p {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  height: 20px;
+  color: var(--text);
+  z-index: 100;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.animes-container .anime-wrapper div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.animes-container .anime-wrapper p.episode {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 10px;
+}
